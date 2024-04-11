@@ -7,7 +7,7 @@ export DYLD_LIBRARY_PATH
 CCG_PATH=`which $0`
 CCG_PATH=`dirname $CCG_PATH`
 
-SERVER=`gccg.meccg.es`
+SERVER=`gccg.meccg.com`
 cd $CCG_PATH
 
 if [ ! -f ./scripts/client.functions ]; then
@@ -27,6 +27,6 @@ else
     echo "You must install package containing program binaries, for example 'linux-i386'."
     exit 1
   fi
-  ./ccg_client --server gccg.meccg.es --design 1024x700 $* metw.xml
+  ./ccg_client --server gccg.meccg.com --design 1024x700 $* metw.xml
 fi
 
